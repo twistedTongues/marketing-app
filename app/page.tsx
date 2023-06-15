@@ -28,11 +28,11 @@ export default function Home() {
       <section className="bg-blue-500">
           <div className="flex items-center py-20 lg:py-40 px-5 lg:px-10 max-w-screen-lg mx-auto">
           <div className="w-1/2 px-5">
-            <h2 className="pb-7 text-3xl font-light">Our product makes your life easier.</h2>
+            <h2 className="pb-7 text-3xl font-light drop-shadow-md">Our product makes your life easier.</h2>
             <p>Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation ameSit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidat. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.</p>
           </div>
           <div className="relative h-60 w-1/2">
-            <Image src={IntroImage} alt="intro" fill objectFit="cover"/> 
+            <Image src={IntroImage} alt="intro" fill objectFit="cover" className="rounded-lg drop-shadow-lg"/> 
           </div>
           </div>
       </section>
@@ -49,13 +49,13 @@ export default function Home() {
 
       <section className="bg-blue-500">
         <div className="py-20 lg:py-60 px-5 lg:px-10 max-w-screen-lg mx-auto">
-          <h3 className="text-4xl lg:text-5xl font-light pb-7">Featured Posts</h3>
+          <h3 className="text-4xl lg:text-5xl font-light pb-7 drop-shadow-md">Featured Posts</h3>
           <div className="pb-7">
             <ul className="flex flex-col md:flex-row md:justify-between">
               <li className="pb-7"> 
                 <Link href="/" className="flex">
-                  <div className="relative h-20 w-20">
-                    <Image src={HeroImage} alt="post" fill objectFit="cover"/>
+                  <div className="relative h-32 w-32 md:h-64 md:w-64">
+                    <Image src={HeroImage} alt="post" fill objectFit="cover" className="rounded-lg drop-shadow-md"/>
                   </div>
                   <div className="pl-5">
                     <h5 className="text-xl font-semibold">Placeholder</h5>
@@ -65,8 +65,8 @@ export default function Home() {
               </li>
               <li>
                 <Link href="/" className="flex">
-                  <div className="relative h-20 w-20">
-                    <Image src={IntroImage} alt="post" fill objectFit="cover"/>
+                  <div className="relative h-32 w-32 md:h-64 md:w-64">
+                    <Image src={IntroImage} alt="post" fill objectFit="cover" className="rounded-lg drop-shadow-md"/>
                   </div>
                   <div className="pl-5">
                     <h5 className="text-xl font-semibold">Placeholder</h5>
@@ -77,7 +77,7 @@ export default function Home() {
             </ul>
           </div>
           <div className="flex justify-center">
-            <Link href="/blog" className="px-4 py-2 text-xl uppercase bg-white text-blue-500 rounded-sm">View all posts</Link>
+            <Link href="/blog" className="px-4 py-2 text-xl uppercase bg-white text-blue-500 rounded-sm drop-shadow-lg">View all posts</Link>
           </div>
         </div>
       </section>
